@@ -22,7 +22,8 @@ function Xpages() {
         console.log(res);
         setEmployeeData(res.data);
       } catch (error) {
-        console.error("Error fetching data:", error);
+          console.error("Error fetching data:", error);
+          alert("failed to fetch data")
       }
     };
     fetchdata();
